@@ -18,6 +18,7 @@ module.exports = {
     'object-shorthand': 'error',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-var-requires': false,
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'never'],

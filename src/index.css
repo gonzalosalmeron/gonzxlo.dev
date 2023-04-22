@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.stop-on-hover:hover {
+  animation-play-state: paused;
+}
+
+.gridPattern {
+  background-image: linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.wave {
+  display: block;
+  position: relative;
+  top: -2px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1512 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(47, 73, 94, 1)" d="M 0 169 C 383.5 169 383.5 110 767 110 L 767 110 L 767 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 766 110 C 1139 110 1139 169 1512 169 L 1512 169 L 1512 0 L 766 0 Z" stroke-width="0"></path> </svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+@media (max-width: 1511px) {
+  .div {
+    background-size: contain;
+  }
+}
+
+/* @layer components {
+} */
