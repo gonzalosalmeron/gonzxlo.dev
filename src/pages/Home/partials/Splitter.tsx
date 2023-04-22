@@ -12,11 +12,7 @@ const Splitter = () => {
             height={64}
             textTop={0}
           >
-            <img
-              src='/src/assets/imgs/happy_face.svg'
-              alt=''
-              className='w-14'
-            />
+            <img src='images/happy_face.svg' alt='' className='w-12' />
           </CircularText>
         </div>
         <svg

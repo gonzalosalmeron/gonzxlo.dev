@@ -5,11 +5,7 @@ const Aboutme = () => {
         <div className='flex items-center'>
           <p>Conóceme un </p>
           <div className='relative'>
-            <img
-              src='src/assets/imgs/bulb.svg'
-              alt=''
-              className='z-10 ml-3 w-14 pb-4'
-            />
+            <img src='images/bulb.svg' alt='' className='z-10 ml-3 w-14 pb-4' />
             <div className='absolute right-5 top-5 h-4 w-4 animate-blink'></div>
           </div>
         </div>

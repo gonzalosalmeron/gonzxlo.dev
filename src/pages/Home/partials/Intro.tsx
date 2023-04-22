@@ -18,7 +18,7 @@ const Intro = () => {
 
       <div className='gridPattern relative h-auto w-full bg-creme md:w-[85vw] md:rounded-r-full'>
         <img
-          src='/src/assets/imgs/gonzxlo.webp'
+          src='/images/logo/gonzxlo.webp'
           alt=''
           height={40}
           className='m-auto h-max max-h-[60vh] pt-10'
