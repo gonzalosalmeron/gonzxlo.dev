@@ -38,7 +38,7 @@ const CardProject = (props: props) => {
       />
       <div className='font-epilogue pl-5 text-left'>
         <h3 className='mt-3 text-2xl font-medium transition duration-300 md:group-hover:text-purple-600'>
-          {props.data.data ?? 'XASEISF?'}
+          {props.data.name ?? 'XASEISF?'}
         </h3>
         <p
           aria-label={props.data.description ?? ''}

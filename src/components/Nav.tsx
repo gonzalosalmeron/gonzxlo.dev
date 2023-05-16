@@ -6,14 +6,14 @@ const Nav = () => {
         <p className='text-lg font-bold text-creme'>GONZXLODEV</p>
       </div>
 
-      <div className='flex items-center gap-4 font-medium text-creme'>
+      <div className='hidden items-center gap-4 font-medium text-creme md:flex'>
         <a href='#home'>Home</a>
         <a href='#about'>About me</a>
         <a href='#projects'>Projects</a>
       </div>
 
       <div className='flex items-center justify-center gap-4'>
-        <div className='flex items-center gap-1.5 text-xs font-light text-creme'>
+        <div className='hidden items-center gap-1.5 text-xs font-light text-creme md:flex'>
           <button className='cursor-not-allowed'>ES</button>
           <span>-</span>
           <button className='underline'>EN</button>

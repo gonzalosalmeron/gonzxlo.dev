@@ -6,7 +6,7 @@ import CircularText from '@/components/CircularText'
 
 const Intro = () => {
   return (
-    <div className='relative w-full pb-10'>
+    <div className='relative w-full overflow-hidden pb-10'>
       <div className='m-auto max-w-7xl'>
         <h1
           className='text-center font-bold text-white'
