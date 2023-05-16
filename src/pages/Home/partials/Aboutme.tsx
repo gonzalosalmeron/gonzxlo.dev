@@ -24,9 +24,10 @@ const Aboutme = () => {
           technology.
         </p>
         <p>
-          My enthusiasm to grow as a professional makes me want to better myself
-          every day in order to to improve myself in order to achieve my goals
-          and at the same time to improve as a developer 👨🏻‍💻.
+          I am Gonzalo Salmerón, a software developer who is passionate about
+          technology. My enthusiasm to grow as a professional makes me want to
+          improve myself every day with small advances, to finally achieve my
+          goals and therefore get better as a developer. 👨🏻‍💻
         </p>
         <p>
           I am currently continuing my studies studying DAW and at the same time

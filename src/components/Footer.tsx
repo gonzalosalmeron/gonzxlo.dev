@@ -103,7 +103,7 @@ const Footer = () => {
 
       <div className='m-auto mt-5 flex max-w-7xl justify-end px-4 md:pr-20'>
         <p className='text-sm font-light text-gray-500'>
-          Realizado por Gonzalo Salmerón moviendo las manitas.
+          Developed by Gonzalo Salmerón with ♥
         </p>
       </div>
     </footer>
