@@ -7,24 +7,22 @@ const Nav = () => {
       </div>
 
       <div className='flex items-center gap-4 font-medium text-creme'>
-        <a href='#'>Home</a>
-        <a href='#'>About me</a>
-        <a href='#'>Projects</a>
+        <a href='#home'>Home</a>
+        <a href='#about'>About me</a>
+        <a href='#projects'>Projects</a>
       </div>
 
       <div className='flex items-center justify-center gap-4'>
         <div className='flex items-center gap-1.5 text-xs font-light text-creme'>
-          <a href='#'>ES</a>
+          <button className='cursor-not-allowed'>ES</button>
           <span>-</span>
-          <a href='#' className='underline'>
-            EN
-          </a>
+          <button className='underline'>EN</button>
         </div>
         <a
-          href='#'
+          href='#footer'
           className='rounded-full bg-creme px-3 py-2 text-sm font-medium'
         >
-          Contacto
+          Contact
         </a>
       </div>
     </nav>

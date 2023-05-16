@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Elmo",
+    "description": "Portfolio management application that allows you to manage your money by creating spending goals and tracking your movements.",
+    "link": "https://github.com/gonzalosalmeron/elmoApp",
+    "tech": [
+      "ionic",
+      "angular"
+    ],
+    "img": "/projects/elmo.jpeg",
+    "date": "11/2021"
+  },
+  {
+    "name": "Yummy",
+    "description": "Social network of recipes where you can create and share new ones with your friends to satisfy the need of all those who need ideas for their daily meals.",
+    "link": "https://github.com/gonzalosalmeron/yummy",
+    "tech": [
+      "kotlin"
+    ],
+    "img": "/projects/yummy.png",
+    "date": "05/2022"
+  },
+  {
+    "name": "Bullyganza",
+    "description": "A dog events website where information about upcoming events will be published to keep users updated.",
+    "link": "https://bullyganza.com/",
+    "tech": [
+      "vue",
+      "laravel",
+      "inertia",
+      "tailwind"
+    ],
+    "img": "/projects/bullyganza.png",
+    "date": "06/2022"
+  },
+  {
+    "name": "Billifier",
+    "description": "Simplify invoice creation. With an intuitive interface, users can generate customized invoices quickly and easily.",
+    "link": "https://billifier.vercel.app/",
+    "tech": [
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwind"
+    ],
+    "img": "/projects/billifier.png",
+    "date": "03/2023"
+  }
+]

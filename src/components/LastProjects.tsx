@@ -1,13 +1,15 @@
 import CardProject from './CardProject'
 
+import projectsData from '@/json/projects.json'
+
+const projects = projectsData.reverse()
+
 const LastProjects = () => {
   return (
     <div className='mx-auto flex max-w-7xl items-center gap-8 overflow-x-scroll px-4 pt-6'>
-      {Array(10)
-        .fill(0)
-        .map((_, i) => {
-          return <CardProject key={i} />
-        })}
+      {projects.map((project, i) => {
+        return <CardProject data={project} key={i} />
+      })}
     </div>
   )
 }
