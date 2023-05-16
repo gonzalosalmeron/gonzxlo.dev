@@ -22,7 +22,7 @@ const CardProject = (props: props) => {
           >
             <path
               strokeLinecap='square'
-              strokeLinejoin='square'
+              strokeLinejoin='round'
               d='M19.5 4.5l-15 15m0 0h11.25m-11.25 0V8.25'
             />
           </svg>
