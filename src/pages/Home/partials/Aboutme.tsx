@@ -16,18 +16,17 @@ const Aboutme = () => {
             <div className='absolute right-5 top-5 h-4 w-4 animate-blink'></div>
           </div>
         </div>
-        <p>a litter better</p>
+        <p>a little better</p>
       </div>
       <div className='text flex flex-col gap-4 text-xl font-medium text-gray-50 md:max-w-[40%] md:pt-10'>
         <p>
-          Mi name is Gonzalo Salmerón, I am a sofware developer who loves
+          I am Gonzalo Salmerón, a software developer who is passionate about
           technology.
         </p>
         <p>
-          I am Gonzalo Salmerón, a software developer who is passionate about
-          technology. My enthusiasm to grow as a professional makes me want to
-          improve myself every day with small advances, to finally achieve my
-          goals and therefore get better as a developer. 👨🏻‍💻
+          My enthusiasm to grow as a professional makes me want to improve
+          myself every day with small advances, to finally achieve my goals and
+          therefore get better as a developer. 👨🏻‍💻
         </p>
         <p>
           I am currently continuing my studies studying DAW and at the same time
