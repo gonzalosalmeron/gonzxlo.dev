@@ -6,7 +6,7 @@ const projects = projectsData.reverse()
 
 const LastProjects = () => {
   return (
-    <div className='mx-auto flex max-w-7xl items-center gap-8 overflow-x-scroll px-4 pt-6'>
+    <div className='scrollbar-hide mx-auto flex max-w-7xl snap-x items-center gap-8 overflow-x-scroll px-8 pt-6 sm:px-6 md:px-4'>
       {projects.map((project, i) => {
         return <CardProject data={project} key={i} />
       })}

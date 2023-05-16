@@ -8,7 +8,7 @@ const CardProject = (props: props) => {
       href={props.data.link ?? '#'}
       target='_blank'
       rel='noopener'
-      className='group relative m-auto w-[280px] shrink-0 cursor-pointer'
+      className='group relative m-auto w-[280px] shrink-0 cursor-pointer snap-center'
     >
       <div className='absolute -right-6 -top-6 z-10 h-[66px] w-[66px] scale-0 transform cursor-pointer rounded-full border-[7px] border-gray-100 bg-purple-400 p-1 opacity-0 transition duration-200 md:group-hover:scale-100 md:group-hover:opacity-100'>
         <div className='flex h-full w-full items-center justify-center rounded-full border border-white bg-purple-400'>
@@ -34,7 +34,7 @@ const CardProject = (props: props) => {
           'https://fastly.picsum.photos/id/866/800/1200.jpg?hmac=dMtn2g5Iba-xMMzrTGgBGUrYERWiQdeqVjoRka3FL5E'
         }
         alt=''
-        className='h-96 w-full shrink-0 rounded-[35px] object-cover transition duration-500 md:group-hover:grayscale-0'
+        className='h-96 w-full shrink-0 rounded-[35px] object-cover shadow-md transition duration-500 md:grayscale md:group-hover:grayscale-0'
       />
       <div className='font-epilogue pl-5 text-left'>
         <h3 className='mt-3 text-2xl font-medium transition duration-300 md:group-hover:text-purple-600'>
@@ -42,7 +42,7 @@ const CardProject = (props: props) => {
         </h3>
         <p
           aria-label={props.data.description ?? ''}
-          className='line-clamp-2 text-sm font-thin text-zinc-600 transition duration-300 md:group-hover:text-purple-500'
+          className='line-clamp-3 text-sm font-thin text-zinc-600 transition duration-300 md:group-hover:text-purple-500'
         >
           {props.data.description ??
             'Xaseisf?aseisf? xaseisf?aseisf? xaseisf?aseisf? xaseisf?aseisf? xaseisf?aseisf? xaseisf?aseisf? xaseisf?aseisf? xaseisf?aseisf?'}
