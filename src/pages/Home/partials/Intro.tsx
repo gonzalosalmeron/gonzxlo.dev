@@ -1,10 +1,13 @@
 import ArrowDown from '@heroicons/react/24/outline/ChevronDoubleDownIcon'
 import Cursor from '@heroicons/react/24/outline/CursorArrowRaysIcon'
 import Globe from '@heroicons/react/24/outline/GlobeAltIcon'
+import { useTranslation } from 'react-i18next'
 
 import CircularText from '@/components/CircularText'
 
 const Intro = () => {
+  const { t } = useTranslation()
+
   return (
     <div className='relative w-full overflow-hidden pb-10'>
       <div className='m-auto max-w-7xl'>
@@ -25,18 +28,18 @@ const Intro = () => {
         />
 
         <div className='absolute right-[10%] top-20 hidden rotate-12 cursor-help duration-200 hover:scale-105 md:flex lg:right-[16%]'>
-          <div className='text-lg font-bold text-white'>
+          <div className='text-lg font-bold uppercase text-white'>
             <span className='rounded-t-xl rounded-br-xl bg-red-400 px-3 py-1'>
-              USER DESIGN
+              {t('user_design')}
             </span>
             <br />
-            <span className='rounded-b-xl bg-red-400 px-3 py-1'>
-              USER EXPERIENCE
+            <span className='rounded-b-xl rounded-tr-xl bg-red-400 px-3 py-1'>
+              {t('user_experience')}
             </span>
           </div>
         </div>
 
-        <div className='absolute -top-6 left-[12%] hidden -rotate-[8deg] cursor-help flex-col items-center rounded-full bg-cyan-200 px-6 py-6 text-lg font-extrabold text-black duration-200 hover:scale-105 md:flex'>
+        <div className='absolute -top-6 left-[12%] hidden aspect-square w-min -rotate-[8deg] cursor-help flex-col items-center justify-center rounded-full bg-cyan-200 px-6 text-lg font-extrabold uppercase text-black duration-200 hover:scale-105 md:flex'>
           <svg
             className=''
             xmlns='http://www.w3.org/2000/svg'
@@ -49,19 +52,21 @@ const Intro = () => {
             <circle cx='9' cy='10' r='2'></circle>
             <circle cx='15' cy='10' r='2'></circle>
           </svg>
-          <p className='text-center'>DESIGN</p>
-          <p className='-mt-1 text-center'>STRATEGY</p>
-          <p className='text-xs font-light'>PREVIOUS {`->`}</p>
-          <p className='text-xs font-light'>STUDY</p>
+          <p className='text-center'>{t('design')}</p>
+          <p className='-mt-1 text-center'>{t('strategy')}</p>
+          <p className='text-xs font-light'>
+            {t('previus')} {`->`}
+          </p>
+          <p className='text-xs font-light'>{t('study')}</p>
         </div>
 
         <div className='absolute bottom-[170px] left-[6%] -rotate-12 scale-90 cursor-help duration-200 sm:scale-[1.2] md:bottom-20 md:left-[18%] md:hover:scale-105'>
-          <div className='stop-on-hover animate-float text-lg font-bold text-black'>
+          <div className='stop-on-hover animate-float text-lg font-bold uppercase text-black'>
             <p className='flex items-center gap-2 rounded-t-xl rounded-br-xl bg-yellow-400 px-3 py-1'>
-              DEVELOPER
+              {t('developer')}
             </p>
             <p className='-mt-2 flex w-min items-center gap-2 whitespace-nowrap rounded-br-xl bg-yellow-400 px-3 py-1'>
-              SPECIALIST
+              {t('specialist')}
             </p>
             <div className='-mt-8 inline-flex w-min whitespace-nowrap rounded-b-xl bg-yellow-400 px-3 py-1'>
               <div className='flex items-center gap-1 rounded-full bg-black px-2 py-1 text-sm text-yellow-400'>

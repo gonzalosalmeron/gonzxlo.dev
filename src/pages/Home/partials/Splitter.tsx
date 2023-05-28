@@ -1,13 +1,16 @@
+import { useTranslation } from 'react-i18next'
+
 import CircularText from '@/components/CircularText'
 
 const Splitter = () => {
+  const { t } = useTranslation()
   return (
     <>
       <div className='relative z-0 mt-40'>
         <div className='absolute -top-[20%] left-1/2 -translate-x-1/2 md:top-[20%]'>
           <CircularText
-            text='I GET THE BEST OUT OF MYSELF '
-            cusClass='bg-purple-200 w-[142px] aspect-square font-bold animate-spin-slow'
+            text={t('i_get_out_the_best')}
+            cusClass='bg-purple-200 w-[142px] aspect-square font-bold animate-spin-slow uppercase'
             origin={-20}
             height={71}
             textTop={0}

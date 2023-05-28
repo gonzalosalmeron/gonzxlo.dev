@@ -2,6 +2,7 @@ import React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import TmplProject from './components/TmplProject'
+import './i18n'
 import './index.css'
 import ReactDOM from 'react-dom/client'
 

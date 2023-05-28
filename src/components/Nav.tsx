@@ -1,4 +1,12 @@
+import { useTranslation } from 'react-i18next'
+
 const Nav = () => {
+  const { t, i18n } = useTranslation()
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng)
+  }
+
   return (
     <nav className='mx-auto flex max-w-7xl items-center justify-between px-6 py-4'>
       <div className='flex items-center gap-2'>
@@ -7,22 +15,32 @@ const Nav = () => {
       </div>
 
       <div className='hidden items-center gap-4 font-medium text-creme md:flex'>
-        <a href='#home'>Home</a>
-        <a href='#about'>About me</a>
-        <a href='#projects'>Projects</a>
+        <a href='#home'>{t('home')}</a>
+        <a href='#about'>{t('about')}</a>
+        <a href='#projects'>{t('projects')}</a>
       </div>
 
       <div className='flex items-center justify-center gap-4'>
-        <div className='hidden items-center gap-1.5 text-xs font-light text-creme md:flex'>
-          <button className='cursor-not-allowed'>ES</button>
+        <div className='items-center gap-1.5 text-xs font-light text-creme md:flex'>
+          <button
+            onClick={() => changeLanguage('es')}
+            className={i18n.language === 'es' ? 'underline' : ''}
+          >
+            ES
+          </button>
           <span>-</span>
-          <button className='underline'>EN</button>
+          <button
+            onClick={() => changeLanguage('en')}
+            className={i18n.language === 'en' ? 'underline' : ''}
+          >
+            EN
+          </button>
         </div>
         <a
           href='#footer'
-          className='rounded-full bg-creme px-3 py-2 text-sm font-medium'
+          className='rounded-full bg-creme px-3 py-2 text-sm font-medium capitalize'
         >
-          Contact
+          {t('contact')}
         </a>
       </div>
     </nav>
